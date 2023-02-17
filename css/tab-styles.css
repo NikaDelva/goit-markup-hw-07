@@ -1,0 +1,29 @@
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        width: 768px;
+    }
+    .customers-menu-link {
+        width: 168px;
+        height: 88px;
+    }
+    
+    .customers-menu {
+        display: flex;
+        column-gap: 24px;
+    }
+
+        /*===SERVICES SECTION====*/
+    .services-section {
+        display: none;
+    }
+
+    /*====OUR TEAM===*/
+        .content-menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        row-gap: 72px;
+        column-gap: 24px;
+        }
+}

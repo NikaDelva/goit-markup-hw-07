@@ -1,0 +1,11 @@
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        max-width: 428px;
+    }
+
+    /*What are we doing*/
+    
+    .services-section {
+        display: none;
+    }
+}

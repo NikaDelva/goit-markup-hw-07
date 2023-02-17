@@ -36,6 +36,9 @@ address {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 body {
@@ -70,15 +73,15 @@ button {
 /*=======CONTAINER=====*/
 
 .container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  /*margin: 0 auto;*/
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 /*========== HEADER =========*/
@@ -224,6 +227,7 @@ button {
 
 .about-us-menu {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -232,20 +236,31 @@ button {
 }
 
 .about-us-item-icon {
-  display: flex;
-  width: 264px;
-  height: 112px;
-  border-radius: 4px;
-  background-color: var(--light-background);
-  margin-bottom: 8px;
-  justify-content: center;
-  align-items: center;
+  display:none;
+}
+
+.about-us-menu-item > .content-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 
 /*====OUR TEAM=====*/
 
 .our-team-section {
   background-color: var(--light-background);
+  padding-bottom: 128px;
+}
+
+.content-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 72px;
 }
 
 .content-title {
@@ -260,15 +275,7 @@ button {
 /*===SERVICES SECTION====*/
 
 .services-section {
-  padding-top: 0;
-}
-
-.services-section-list {
-  display: flex;
-}
-
-.services-section-item:not(:nth-child(3n)) {
-  margin-right: 24px;
+  display: none;
 }
 
 /*===ABOUT US===*/
@@ -282,9 +289,9 @@ button {
   border-radius: 0px 0px 4px 4px;
   background: var(--standart-white);
 }
-.content-menu-item:not(:nth-child(4n)) {
+/*.content-menu-item:not(:nth-child(4n)) {
   margin-right: 24px;
-}
+}*/
 
 .employee-card {
   text-align: center;
@@ -339,25 +346,30 @@ button {
 /*==CUSTOMERS==*/
 
 .customers-section {
-  padding-top: 130px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .customers-menu {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 16px;
+  row-gap: 72px;
 }
 
 .customers-menu-item {
   display: flex;
 }
 
-.customers-menu-item:not(:last-child) {
+/*.customers-menu-item:not(:last-child) {
   margin-right: 24px;
-}
+}*/
 
 .customers-menu-link {
   display: flex;
-  width: 168px;
+  width: 190px;
   height: 88px;
   border-radius: 4px;
   border: 1px solid var(--suble-text);

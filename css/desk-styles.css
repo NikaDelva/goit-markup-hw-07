@@ -1,0 +1,75 @@
+@media screen and (min-width: 1200px) {
+    
+    .container {
+        width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+    
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    /*===ABOUT US===*/
+
+    .about-us-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-us-menu-item {
+        width: 264px;
+    }
+
+    .about-us-item-icon {
+        display: flex;
+        width: 264px;
+        height: 112px;
+        border-radius: 4px;
+        background-color: var(--light-background);
+        margin-bottom: 8px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*===SERVICES SECTION====*/
+    
+    .services-section {
+        display: initial;
+        padding-top: 0;
+    }
+
+    .services-section-list {
+        display: flex;
+    }
+
+    .services-section-item:not(:nth-child(3n)) {
+      margin-right: 24px;
+    }
+
+    /*====OUR TEAM===*/
+    .content-menu {
+        flex-direction: row;
+        column-gap: 24px;
+    }
+
+    .social-links-list {
+        max-width: 100%;
+    }
+    
+    /*==CUSTOMERS==*/    
+    .customers-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .customers-menu-link {
+        width: 168px;
+        height: 88px;
+    }
+
+  
+    
+}
