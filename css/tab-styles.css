@@ -2,6 +2,43 @@
     .container {
         width: 768px;
     }
+    
+    /*ABOUT US SECTION*/
+
+    .about-us-item-icon {
+        display: none;
+    }
+    
+    .about-us-menu-item {
+        width: 356px;
+    }
+
+    .about-us-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+
+    .mob-tab-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: left;
+    }
+
+    .mob-tab-text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        max-width: 100%;
+    }
+
+    /*CUSTOMERS*/
+    
     .customers-menu-link {
         width: 168px;
         height: 88px;

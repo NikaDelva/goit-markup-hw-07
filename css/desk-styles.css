@@ -16,6 +16,7 @@
 
     .about-us-menu {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
     }
 
@@ -33,11 +34,11 @@
         justify-content: center;
         align-items: center;
     }
-
+ 
     /*===SERVICES SECTION====*/
     
     .services-section {
-        display: initial;
+        display: block;
         padding-top: 0;
     }
 

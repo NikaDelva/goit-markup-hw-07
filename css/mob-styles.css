@@ -1,8 +1,26 @@
 @media screen and (min-width: 480px) and (max-width: 767px) {
     .container {
-        max-width: 428px;
+        width: 428px;
     }
 
+    /*About us*/
+    .about-us-menu-item {
+        width: 396px;
+    }
+
+    .mob-tab-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+    }
+
+    .mob-tab-text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        max-width: 100%;
+    }
     /*What are we doing*/
     
     .services-section {
