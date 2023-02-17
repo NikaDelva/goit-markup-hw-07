@@ -3,6 +3,24 @@
         width: 768px;
     }
     
+    /*=======HERO====*/
+    .hero {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url(../img/people-office-bg.jpg);
+        padding-bottom: 108px;
+
+    }
+    
+    .hero-name {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 494px;
+        margin-bottom: 40px;
+    }
+
     /*ABOUT US SECTION*/
 
     .about-us-item-icon {

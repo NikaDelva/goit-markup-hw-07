@@ -12,6 +12,25 @@
         padding-bottom: 120px;
     }
 
+        /*=======HERO====*/
+    .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../img/people-office-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: 1440px;
+    margin: 0 auto;
+    }
+    .hero-name {
+        font-size: 56px;
+        line-height: 1.07;
+        color: var(--standart-white);
+        max-width: 494px;
+        margin-bottom: 48px;
+    }
     /*===ABOUT US===*/
 
     .about-us-menu {

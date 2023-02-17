@@ -174,9 +174,8 @@ button {
   color: var(--brand-color);
 }
 
-/*=======HEROOOO====*/
+/*=======HERO====*/
 
-/*не ставила background colour, закоментувала колір тексту*/
 .hero {
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -185,19 +184,19 @@ button {
     url(../img/people-office-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 188px;
-  padding-bottom: 188px;
-  max-width: 1440px;
+  padding-top: 112px;
+  padding-bottom: 112px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .hero-name {
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   color: var(--standart-white);
-  max-width: 495px;
+  max-width: 318px;
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -231,6 +230,7 @@ button {
   justify-content: center;
   align-items: center;
   row-gap: 72px;
+  margin: 0 auto;
 }
 
 .about-us-menu-item {
@@ -395,6 +395,7 @@ button {
 .footer {
   background-color: var(--dark-theme);
   padding: 100px 0;
+
 }
 
 .footer-container {

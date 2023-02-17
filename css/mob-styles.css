@@ -3,7 +3,25 @@
         width: 428px;
     }
 
+
+        /*=======HERO====*/
+        .hero {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url(../img/people-office-bg.jpg);
+            max-width: 428px;
+        }
     /*About us*/
+    .about-us-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 72px;
+        margin: 0 auto;
+    }
+    
     .about-us-menu-item {
         width: 396px;
     }
