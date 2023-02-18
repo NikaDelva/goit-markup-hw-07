@@ -575,16 +575,16 @@ button {
 
 .modal {
   position: absolute;
-  width: 408px;
-  height: 584px;
+  width: 100%;
+  min-height: 586px;
   top: 50%;
   left: 50%;
   background-color: var(--modal-window);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-top: 72px;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-top: 24px;
   padding-bottom: 24px;
   transform: translate(-50%, -50%) rotateY(0);
   transition: transform var(--duration), opacity var(--duration);
@@ -593,6 +593,11 @@ button {
 .backdrop.is-hidden .modal {
   transform: translate(-50%) rotateY(90deg);
 }
+
+/*.modal-wrap {
+  display: flex;
+  row-gap: 24px;
+}*/
 
 .modal-close {
   display: flex;
@@ -693,6 +698,8 @@ background-color: var(--pressed-state);
   text-align: center;
   line-height: 1.5;
   margin-bottom: 16px;
+  padding-top: 24px;
+  max-width: 100%;
 }
 
 .modal-field {
@@ -755,8 +762,9 @@ background-color: var(--pressed-state);
   letter-spacing: 0.04em;
   color: var(--modal-text-color);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
+
 
 .privacy-text span {
   display: block;

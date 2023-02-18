@@ -135,3 +135,18 @@
         height: 40px;
         margin-right: 24px;
     }
+
+    /*===MODAL===*/
+    .modal {
+    width: 408px;
+    height: 584px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 72px;
+    padding-bottom: 24px;
+    }
+
+    .modal-close {
+        
+    }
+}

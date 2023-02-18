@@ -119,4 +119,16 @@
         width: 264px;
         margin-right: 24px;
     }
+
+    /*===modal====*/
+
+    .modal {
+        width: 408px;
+        height: 586px; 
+
+    }
+
+    .modal-close {
+    }
+
 }

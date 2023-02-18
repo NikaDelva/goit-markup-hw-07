@@ -44,4 +44,21 @@
     .services-section {
         display: none;
     }
+
+    /*===MODAL===*/
+    .modal {
+        width: 392px;
+        height: 586px;
+        
+    }
+    .modal-close {
+        position: absolute;
+    }
+
+    .modal-title {
+        width: 360px;
+    }
+    .modal-button {
+    margin-top: 24px;
+    }
 }
