@@ -47,16 +47,14 @@
 
     /*===MODAL===*/
     .modal {
-        width: 392px;
-        height: 586px;
-        
-    }
-    .modal-close {
-        position: absolute;
+    width: 392px;
+    height: 586px;
+    padding-right: 16px;
+    padding-left: 16px;   
     }
 
     .modal-title {
-        width: 360px;
+    width: 360px;
     }
     .modal-button {
     margin-top: 24px;
