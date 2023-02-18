@@ -13,12 +13,65 @@
     }
 
     /*=====HEADER=======*/
+    
+    .logotype {
+        margin-right: 76px;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    
     .navigation-menu {
         display: flex;
         align-items: center;
     }
+
+    .navigation-page {
+        display: flex;
+        align-items: center;
+    }
+
     .navigation-menu-item:not(:last-child) {
         margin-right: 40px;
+    }
+
+    .page-active::after {
+        margin-top: 22px;
+    }
+
+    .address-menu {
+        display: flex;
+        gap: 40px;
+    }
+
+    .address-menu-link {
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--dark-theme);
+        transition: color var(--duration);
+    }
+
+    .page-active {
+        position: relative;
+    }
+    .page-active::after {
+        display: block;
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: var(--pressed-state);
+        border-radius: 2px;
+        position: absolute;
+        margin-top: 22px;
+    }
+
+    .header-button {
+        display: none;
     }
 
         /*=======HERO====*/
