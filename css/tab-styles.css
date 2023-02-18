@@ -81,4 +81,42 @@
         row-gap: 72px;
         column-gap: 24px;
         }
+
+    /*===FOOTER===*/
+    
+    .footer-container {
+    display: flex;
+    flex-direction: row;
+    row-gap: 72px;
+    column-gap: 24px;
+    flex-wrap: wrap;
+    padding-left: 108px;
+    padding-right: 108px;
+    }
+
+    .footer-description {
+    align-items: flex-start;
+    justify-content: center;
+    }
+
+    .footer-title {
+    text-align: left;
+    }
+
+    .footer-text {
+        max-width: 264px;
+    }
+
+
+    .subscribe-form {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 496px;
+        margin-top: 16px;
+    }
+    .subscribe-field {
+        width: 264px;
+        margin-right: 24px;
+    }
 }

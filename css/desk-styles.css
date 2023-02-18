@@ -90,6 +90,48 @@
         height: 88px;
     }
 
-  
+  /*===FOOTER===*/
+    .footer {
+        padding: 100px 0;
+    }
     
+    .footer-container {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .footer-title {
+         text-align: left;
+     }
+
+    .footer-text {
+        width: 264px;
+    }
+
+    .footer-description {
+        margin-right: 120px;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .footer-link {
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .footer-subscribe {
+        margin-left: 80px;
+    }
+    
+    .subscribe-form {
+        flex-direction: row;
+        margin-top: 16px;
 }
+
+    .subscribe-field {
+        width: 264px;
+        height: 40px;
+        margin-right: 24px;
+    }

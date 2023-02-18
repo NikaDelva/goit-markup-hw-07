@@ -76,7 +76,7 @@ button {
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
-  /*margin: 0 auto;*/
+  margin: 0 auto;
 }
 
 .section {
@@ -94,7 +94,7 @@ button {
   color: var(--dark-theme);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
+  /*margin-right: 76px;*/
 }
 
 .accent {
@@ -394,40 +394,56 @@ button {
 
 .footer {
   background-color: var(--dark-theme);
-  padding: 100px 0;
+  padding-top: 96px;
+  padding-bottom: 96px;
 
 }
 
 .footer-container {
   display: flex;
+  flex-direction: column;
+  row-gap: 72px;
 }
 
 .footer-description {
-  margin-right: 120px;
+  /*margin-right: 120px;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
+
 
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--accent);
-  width: 264px;
+  max-width: 268px;
   margin-top: 16px;
 }
 
+
 .footer-social {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  column-gap: 16px;
 }
 
-.footer-item:not(:last-child) {
+/*.footer-item:not(:last-child) {
   margin-right: 16px;
-}
+}*/
 
 .footer-title {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--standart-white);
-  margin-bottom: 16px;
+  /*margin-bottom: 16px;*/
+  text-align: center;
 }
 
 .footer-link {
@@ -560,7 +576,7 @@ button {
 .modal {
   position: absolute;
   width: 408px;
-  min-height: 584px;
+  height: 584px;
   top: 50%;
   left: 50%;
   background-color: var(--modal-window);
@@ -606,32 +622,31 @@ button {
 
 }
 
-.footer-subscribe {
+/*.footer-subscribe {
   margin-left: 80px;
-}
+}*/
 
 .subscribe-form {
   display: flex;
-}
-
-.subscribe-wrap {
-  display: flex;
-  flex-direction: row;
-
-}
-
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 16px;
+  width: 100%;
+  }
+  
 .subscribe-field {
-  width: 264px; 
+  width: 100%; 
   Height: 40px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: transparent;
   border-radius: 4px;
-  margin-right: 24px;
   padding-left: 16px;
 }
 
 .subscribe-field::placeholder {
     font-weight: 400;
+    font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
     color: rgba(255, 255, 255, 0.6);
@@ -715,6 +730,7 @@ background-color: var(--pressed-state);
 
 .modal-text-area::placeholder {
   font-weight: 400;
+  font-size: 12px;
   line-height: 1.33;
   color: rgba(117, 117, 117, 0.5);
   letter-spacing: 0.04em;
