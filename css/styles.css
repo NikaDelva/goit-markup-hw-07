@@ -119,13 +119,9 @@ button {
 }
 
 .navigation-menu {
-  display: flex;
-  align-items: center;
+  display: none;
 }
 
-.navigation-menu-item:not(:last-child) {
-  margin-right: 40px;
-}
 
 .navigation-menu-link {
   font-weight: 500;

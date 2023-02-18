@@ -12,6 +12,15 @@
         padding-bottom: 120px;
     }
 
+    /*=====HEADER=======*/
+    .navigation-menu {
+        display: flex;
+        align-items: center;
+    }
+    .navigation-menu-item:not(:last-child) {
+        margin-right: 40px;
+    }
+
         /*=======HERO====*/
     .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
