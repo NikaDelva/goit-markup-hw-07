@@ -210,6 +210,11 @@ button {
   margin-bottom: 16px;
 }
 
+.mobile-close:hover,
+.mobile-close:focus {
+  fill: var(--standart-white);
+  background-color: var(--pressed-state);
+}
 
 .mobile-close:active {
     fill: var(--standart-white);
@@ -272,7 +277,8 @@ button {
 
 .mob-social {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .mob-social-item:not(:last-child) {
@@ -286,7 +292,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../img/people-office-bg.jpg);
+    url(../img/hero-mob.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 112px;
@@ -294,6 +300,17 @@ button {
   max-width: 100%;
   margin: 0 auto;
 }
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero {
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../img/hero-mob-2x.jpg);
+}
+}
+
 
 .hero-name {
   font-size: 36px;
@@ -681,7 +698,7 @@ button {
 .modal {
   position: absolute;
   width: 100%;
-  min-height: 586px;
+  height: auto;
   top: 50%;
   left: 50%;
   background-color: var(--modal-window);
@@ -752,6 +769,7 @@ button {
   background-color: transparent;
   border-radius: 4px;
   padding-left: 16px;
+  color: var(--standart-white);
 }
 
 .subscribe-field::placeholder {
@@ -774,6 +792,10 @@ button {
   align-items: center;
   justify-content: space-around;
   transition: background-color var(--duration);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--standart-white);
 }
 
 .subcribe-button:hover,
@@ -868,6 +890,8 @@ background-color: var(--pressed-state);
   color: var(--modal-text-color);
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
+  
 }
 
 
@@ -891,11 +915,10 @@ background-color: var(--pressed-state);
   border: transparent;
 }
 
+
 .privacy-modal:focus + .privacy-text span {
   border: 2px solid var(--brand-color);
 }
-
-
 
 .privacy-link {
   color: var(--brand-color);

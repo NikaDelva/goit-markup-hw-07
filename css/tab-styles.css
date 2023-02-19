@@ -47,10 +47,19 @@
         background-image: linear-gradient(
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-            url(../img/people-office-bg.jpg);
+            url(../img/hero-tab.jpg);
         padding-bottom: 108px;
         height: 436px;
   
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../img/hero-tab-2x.jpg);
+        }
     }
     
     .hero-name {
@@ -64,10 +73,7 @@
     .page-active {
         position: relative;
     }
-    .page-active::after {
-        margin-top: 29px;
-        
-    }
+   
 
     .page-active::after {
         display: block;
@@ -77,7 +83,7 @@
         background-color: var(--pressed-state);
         border-radius: 2px;
         position: absolute;
-        margin-top: 22px;
+        margin-top: 29px;
     }
 
     /*ABOUT US SECTION*/
@@ -188,5 +194,9 @@
         padding-right: 24px;
         padding-left: 24px;
     }
+
+.privacy-text {
+flex-wrap: nowrap;
+}
 
 }

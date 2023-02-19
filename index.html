@@ -45,16 +45,16 @@
                         </li>
                     </ul>
                 </address>
-                <button type="button" class="header-button">
+                <button type="button" class="header-button" data-menu-open>
                     <svg class="button-icon">
                         <use href="./img/symbol-defs.svg#icon-menu-hamburger"></use>
                     </svg>
                 </button>
             </div>
-        <div class="mob-menu">
+        <div class="mob-menu is-hidden" data-menu>
             <div class="container mob-container">
                 <div>    
-                    <button type="button" class="mobile-close">
+                    <button type="button" class="mobile-close" data-menu-close>
                         <svg class="close-icon" width="8" height="8">
                             <use href="./img/symbol-defs.svg#icon-close-icon"></use>
                         </svg>
@@ -178,13 +178,20 @@
                 <h2 class="title">What are we doing</h2>
                 <ul class="list services-section-list">
                     <li class="services-section-item">
-                        <img src="img/general/img-1.jpg" alt="Sites development" width="360" height="300">
+                        <img 
+                        srcset="./img/general/img-1-2x.jpg 2x"
+                        src="img/general/img-1.jpg" 
+                        alt="Sites development" width="360" height="300">
                     </li>
                     <li class="services-section-item">
-                        <img src="img/general/img-2.jpg" alt="Apps development" width="360" height="300">
+                        <img 
+                        srcset="./img/general/img-2-2x.jpg 2x"
+                        src="img/general/img-2.jpg" alt="Apps development" width="360" height="300">
                     </li>
                     <li class="services-section-item">
-                        <img src="img/general/img-3.jpg" alt="Target advertisement" width="360" height="300">
+                        <img 
+                        srcset="./img/general/img-3-2x.jpg 2x"
+                        src="img/general/img-3.jpg" alt="Target advertisement" width="360" height="300">
                     </li>
                 </ul>
             </div>
@@ -195,7 +202,9 @@
                 <h2 class="title">Our Team</h2>
                 <ul class="content-menu list">
                     <li class="content-menu-item">
-                        <img src="img/employees/img_mark_guerrero.jpg" alt="Mark Guerrero" width="264" height="260" class="content-image">
+                        <img 
+                        srcset="./img/employees/mark-guerrero-2x.jpg 2x"
+                        src="img/employees/img_mark_guerrero.jpg" alt="Mark Guerrero" width="264" height="260" class="content-image">
                         <div class="employee-card">    
                                 <h3 class="content-title">Mark Guerrero</h3>
                                 <p class="text-description">Product Designer</p>
@@ -232,7 +241,9 @@
                         </div>
                     </li>
                     <li class="content-menu-item">
-                        <img src="img/employees/img_tom_ford.jpg" alt="Tom Ford" width="264" height="260" class="content-image">
+                        <img 
+                        srcset="./img/employees/tom-ford-2x.jpg 2x"
+                        src="img/employees/img_tom_ford.jpg" alt="Tom Ford" width="264" height="260" class="content-image">
                         <div class="employee-card">  
                                 <h3 class="content-title">Tom Ford</h3>
                                 <p class="text-description">Frontend Developer</p>
@@ -269,7 +280,9 @@
                         </div>
                     </li>   
                         <li class="content-menu-item">
-                            <img src="img/employees/img_camila_garcia.jpg" alt="Camila Garcia" width="264" height="260" class="content-image">
+                            <img 
+                            srcset="./img/employees/camila-garcia-2x.jpg. 2x"
+                            src="img/employees/img_camila_garcia.jpg" alt="Camila Garcia" width="264" height="260" class="content-image">
                             <div class="employee-card">
                                 <h3 class="content-title">Camila Garcia</h3>
                                 <p class="text-description">Marketing</p>
@@ -306,7 +319,9 @@
                             </div>
                         </li>   
                         <li class="content-menu-item">
-                            <img src="img/employees/img_daniel_wilson.jpg" alt="Daniel Wilson" width="264" height="260" class="content-image">
+                            <img 
+                            srcset="./img/employees/daniel-wilson-2x.jpg 2x"
+                            src="img/employees/img_daniel_wilson.jpg" alt="Daniel Wilson" width="264" height="260" class="content-image">
                             <div class="employee-card">
                                 <h3 class="content-title">Daniel Wilson</h3>
                                 <p class="text-description">UI Designer</p>
@@ -436,7 +451,7 @@
                             </ul>
                 </div>
                 <div class="footer-subscribe">
-                    <p class="subscribe-text footer-title">Subscribe</p>
+                    <p class="subscribe-text">Subscribe</p>
                     <form class="subscribe-form">
                         <label for="email"></label>
                             <input type="email" name="email" id="email" placeholder="E-mail" class="subscribe-field">
@@ -492,7 +507,7 @@
                                     <use href="./img/symbol-defs.svg#icon-checkbox"></use>
                                 </svg>
                             </span>
-                            <p class="policy-text">I accept the terms and conditions of the&nbsp;<a href="" class="privacy-link">Privacy Policy</a></p>
+                            I accept the terms and conditions of the&nbsp;<a href="" class="privacy-link">Privacy Policy</a>
                         </label>
                     </div>
                     <button type="submit" class="modal-button">Send</button>
@@ -500,5 +515,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
