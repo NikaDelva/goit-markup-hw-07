@@ -52,7 +52,7 @@
         font-style: normal;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: var(--dark-theme);
+        color: var(--main-text-color);
         transition: color var(--duration);
     }
 
@@ -156,8 +156,13 @@
         padding-bottom: 120px;
     }
 
-    .customers-menu-link {
-        width: 168px;
+    .customers-menu {
+        flex-wrap: nowrap;
+        column-gap: 24px;
+    }
+
+    .customers-menu-item {
+        max-width: 168px;
         height: 88px;
     }
 
@@ -205,6 +210,10 @@
         width: 264px;
         height: 40px;
         margin-right: 24px;
+    }
+
+    .subscribe-text {
+        text-align: left;
     }
 
     /*===MODAL===*/

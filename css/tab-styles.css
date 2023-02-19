@@ -123,14 +123,16 @@
 
     /*CUSTOMERS*/
     
-    .customers-menu-link {
-        width: 168px;
-        height: 88px;
-    }
     
     .customers-menu {
         display: flex;
         column-gap: 24px;
+    }
+
+    .customers-menu-item {
+        flex-basis: calc((100% - 24px) / 2);
+        max-width: 168px;
+        height: 88px;
     }
 
         /*===SERVICES SECTION====*/
@@ -186,6 +188,10 @@
         margin-right: 24px;
     }
 
+    .subscribe-text {
+        text-align: left;
+    }
+
     /*===modal====*/
 
     .modal {
@@ -193,10 +199,11 @@
         height: 586px;
         padding-right: 24px;
         padding-left: 24px;
+        padding-top: 48px;
     }
 
-.privacy-text {
-flex-wrap: nowrap;
-}
+    .privacy-text {
+    flex-wrap: nowrap;
+    }
 
 }

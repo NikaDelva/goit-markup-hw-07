@@ -184,7 +184,10 @@ button {
   background-color: var(--standart-white);
   top: 0;
   padding: 40px;
+  z-index: 1;
 }
+
+
 
 .mob-container {
   display: flex;
@@ -201,8 +204,8 @@ button {
   height: 24px;
   border-radius: 50%;
   background-color: var(--accent);
-  align-items: center;
-  justify-content: center;
+ /* align-items: center;
+  justify-content: center;*/
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: fill var(--duration), background-color var(--duration);
   outline: transparent;
@@ -248,7 +251,7 @@ button {
 
 .mob-menu-tel {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 22px;
   line-height: 1.2;
   color: var(--brand-color);
 }
@@ -279,10 +282,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-}
-
-.mob-social-item:not(:last-child) {
-  margin-right: 56px;
+  column-gap: 25px;
 }
 
 /*=======HERO====*/
@@ -388,6 +388,21 @@ button {
   margin-bottom: 8px;
 }
 
+/* about us */
+
+.mob-tab-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+}
+
+.mob-tab-text {
+  font-weight: 500;
+  font-size: 16px;
+  width: 100%;
+}
+
 /*===SERVICES SECTION====*/
 
 .services-section {
@@ -475,26 +490,27 @@ button {
   row-gap: 72px;
 }
 
-.customers-menu-item {
-  display: flex;
-}
+  .customers-menu-item {
+    display: flex;
+    flex-basis: calc((100% - 16px) / 2);
+    max-width: 190px;
+    height: 88px;
 
-/*.customers-menu-item:not(:last-child) {
-  margin-right: 24px;
-}*/
+  }
 
-.customers-menu-link {
-  display: flex;
-  width: 190px;
-  height: 88px;
-  border-radius: 4px;
-  border: 1px solid var(--suble-text);
-  background-color: var(--standart-white);
-  justify-content: center;
-  align-items: center;
-  transition: border-color var(--duration);
-  outline: none;
-}
+
+
+ .customers-menu-link {
+   border-radius: 4px;
+   border: 1px solid var(--suble-text);
+   background-color: var(--standart-white);
+   outline: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    width: 100%;
+    height: 100%;
+ }
 
 .customers-menu .customers-menu-link:hover,
 .customers-menu .customers-menu-link:focus {
@@ -706,7 +722,7 @@ button {
   border-radius: 4px;
   padding-right: 16px;
   padding-left: 16px;
-  padding-top: 24px;
+  padding-top: 48px;
   padding-bottom: 24px;
   transform: translate(-50%, -50%) rotateY(0);
   transition: transform var(--duration), opacity var(--duration);
@@ -760,6 +776,14 @@ button {
   justify-content: center;
   row-gap: 16px;
   width: 100%;
+  }
+
+  .subscribe-text {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--standart-white);
+    text-align: center;
   }
   
 .subscribe-field {
@@ -889,7 +913,8 @@ background-color: var(--pressed-state);
   letter-spacing: 0.04em;
   color: var(--modal-text-color);
   display: flex;
-  align-items: flex-start;
+  justify-content: space-around;
+  /*align-items: flex-start;*/
   flex-wrap: wrap;
   
 }

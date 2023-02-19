@@ -19,6 +19,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mob-styles.css">
+    <link rel="stylesheet" href="./css/tab-styles.css">
+    <link rel="stylesheet" href="./css/desk-styles.css">
   </head>
   <body>
     <!--HEADER-->
@@ -54,7 +57,7 @@
           </svg>
         </button>
       </div>
-      <div class="mob-menu is-hidden" data-menu>
+      <div class="mob-menu portfolio-mob is-hidden" data-menu>
         <div class="container mob-container">
           <div>
             <button type="button" class="mobile-close" data-menu-close>
@@ -372,16 +375,15 @@
           </ul>
         </div>
         <div class="footer-subscribe">
+          <p class="subscribe-text">Subscribe</p>
           <form class="subscribe-form">
-            <label for="email" class="subscribe-text">Subscribe</label>
-            <span class="subscribe-wrap">
-              <input type="email" name="email" id="email" placeholder="E-mail" class="subscribe-field">
-              <button class="subcribe-button footer-title" type="submit">Subscribe
-                <svg class="subscribe-icon" width="24" height="20">
-                  <use href="./img/symbol-defs.svg#icon-Frame-3"></use>
-                </svg>
-              </button>
-            </span>
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="E-mail" class="subscribe-field">
+            <button class="subcribe-button footer-title" type="submit">Subscribe
+              <svg class="subscribe-icon" width="24" height="20">
+                <use href="./img/symbol-defs.svg#icon-Frame-3"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>

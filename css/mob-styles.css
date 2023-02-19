@@ -3,6 +3,15 @@
         width: 428px;
     }
 
+    /*mob menu*/
+
+    .mob-menu-tel {
+        font-size: 36px;
+    }
+
+    .mob-social {
+        column-gap: 56px;
+    }
 
         /*=======HERO====*/
         .hero {
@@ -10,7 +19,6 @@
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
             url(../img/people-office-bg.jpg);
-            max-width: 428px;
         }
     /*About us*/
     .about-us-menu {
@@ -26,23 +34,35 @@
         width: 396px;
     }
 
-    .mob-tab-title {
+    .mob-menu { 
+        width: 100%;
+        height: 100%;
+    }
+
+    /*.mob-tab-title {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
         text-align: center;
-    }
+    }*/
 
-    .mob-tab-text {
+    /*.mob-tab-text {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         max-width: 100%;
-    }
+    }*/
     /*What are we doing*/
     
     .services-section {
         display: none;
+    }
+
+    /*customers*/
+
+    .customers-menu-link {
+        width: 190px;
+        height: 88px;
     }
 
     /*===MODAL===*/
