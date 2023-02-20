@@ -609,6 +609,7 @@ button {
   display: flex;
   margin-bottom: 72px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .filter-button-item:not(:last-child) {

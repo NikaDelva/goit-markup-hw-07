@@ -270,4 +270,8 @@
     .privacy-text {
         flex-wrap: nowrap;
     }
+
+    .filter-buttons {
+        flex-wrap: nowrap;
+    }
 }
